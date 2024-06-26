@@ -1,0 +1,108 @@
+@import "./normalize.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 16px;
+  word-break: keep-all;
+  font-family: pretendard, -apple-system, sans-serif;
+  letter-spacing: -0.3px;
+  columns: #222;
+  padding-bottom: 2rem;
+  margin: 0px;
+  text-size-adjust: 100%;
+  height: 9999px;
+}
+
+body::before {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 15px;
+  background: linear-gradient(90deg, #fc5c7d, #6a82fb);
+}
+
+.container {
+  width: 100%;
+  max-width: 50rem;
+  margin: auto;
+}
+
+section {
+  padding: 0 2rem;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.period-mark {
+  color: #4562f7;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+.big-paragraph {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.row-left {
+  -ms-flex-preferred-size: 18rem;
+  flex-basis: 18rem;
+  padding-right: 1rem;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.row-right {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+h3,
+h4 {
+  font-size: 2rem;
+  margin: 0 0 1rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem;
+  color: #333;
+}
+
+.role {
+  display: block;
+}
